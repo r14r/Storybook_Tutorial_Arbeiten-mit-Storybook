@@ -21,7 +21,8 @@
     "test-storybook": "test-storybook",
     "build-storybook": "npm run docs:json && build-storybook",
     "init-msw": "msw init src/",
-    "docs:json": "compodoc -p ./tsconfig.json -e json -d ."
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
+    "publish": "npx chromatic --project-token=c91ad165ac14"
   },
   "private": true,
   "dependencies": {
