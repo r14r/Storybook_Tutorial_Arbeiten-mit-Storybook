@@ -1,0 +1,77 @@
+{
+  "name": "taskbox",
+  "version": "0.1.0",
+  "description": "Starter template to get up and running quickly with Angular and Storybook",
+  "author": "Chromatic <https://chromatic.com/>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chromaui/intro-storybook-angular-template"
+  },
+  "bugs": {
+    "url": "https://github.com/chromaui/intro-storybook-angular-template/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "jest --watchAll",
+    "storybook": "npm run docs:json && start-storybook -p 6006",
+    "test-storybook": "test-storybook",
+    "build-storybook": "npm run docs:json && build-storybook",
+    "init-msw": "msw init src/",
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d ."
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-devkit/architect": "^0.1402.6",
+    "@angular-devkit/core": "^14.2.6",
+    "@angular/animations": "~14.2.7",
+    "@angular/common": "~14.2.7",
+    "@angular/compiler": "~14.2.7",
+    "@angular/core": "~14.2.7",
+    "@angular/forms": "~14.2.7",
+    "@angular/platform-browser": "~14.2.7",
+    "@angular/platform-browser-dynamic": "~14.2.7",
+    "@angular/router": "~14.2.7",
+    "@ngxs/devtools-plugin": "^3.7.5",
+    "@ngxs/logger-plugin": "^3.7.5",
+    "@ngxs/store": "^3.7.5",
+    "@types/react": "^18.0.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rxjs": "~7.5.7",
+    "tslib": "^2.4.0",
+    "webpack": "^5.74.0",
+    "zone.js": "~0.11.8"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~14.2.6",
+    "@angular/cli": "~14.2.6",
+    "@angular/compiler-cli": "~14.2.7",
+    "@babel/core": "^7.19.6",
+    "@compodoc/compodoc": "^1.1.19",
+    "@storybook/addon-a11y": "^6.5.13",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/angular": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/test-runner": "^0.9.0",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.4",
+    "babel-loader": "^8.2.5",
+    "jest": "^29.2.1",
+    "jest-preset-angular": "^12.2.2",
+    "msw": "^0.47.4",
+    "msw-storybook-addon": "^1.6.3",
+    "typescript": "~4.8.4"
+  }
+}
+
+
